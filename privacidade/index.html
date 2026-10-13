@@ -13,19 +13,20 @@
   </head>
   <body>
     <h1>Política de Privacidade do Leio</h1>
-    <p>Última atualização: 12 de outubro de 2026</p>
+    <p>Última atualização: 13 de outubro de 2026</p>
 
     <p>O Leio é um aplicativo de registro pessoal de leitura, com clubes opcionais. Esta política explica, em linguagem direta, o que acontece com os seus dados. As regras de uso do app estão nos <a href="../termos/">Termos de Uso</a>.</p>
 
     <h2>Sua leitura é sua, e fica com você</h2>
     <p>Os registros que você cria ao usar o Leio — livros, sessões de leitura, citações, vocabulário, nome e foto de perfil — são armazenados <strong>apenas no seu aparelho</strong>. Não temos acesso ao que você lê. Se você desinstalar o aplicativo, esses dados são apagados pelo sistema.</p>
-    <p>Você pode exportar tudo como um arquivo JSON em Ajustes → Backup, e importá-los em outro aparelho.</p>
+    <p>Em Ajustes → Backup, você pode exportar os registros em JSON ou criar um backup completo em ZIP, incluindo os ebooks anexados, e restaurá-los em outro aparelho.</p>
 
     <h2>Conta (opcional: clubes e resenhas públicas)</h2>
     <p>Usar o Leio <strong>não exige conta</strong>. A conta existe para dois recursos: os clubes, que precisam sincronizar membros e check-ins entre aparelhos, e as resenhas que você decide publicar. Se você entrar com o Google, coletamos:</p>
     <ul>
-      <li><strong>Nome e e-mail da conta Google</strong> (fornecidos pelo próprio Google no login);</li>
+      <li><strong>Nome, e-mail e identificador da conta Google</strong> (fornecidos pelo próprio Google no login), além do identificador da conta no Leio;</li>
       <li><strong>Atividade de clube</strong>: em quais clubes você participa, seu check-in diário (dia, páginas e minutos lidos no dia) e o código dos clubes que você cria;</li>
+      <li><strong>Conversas e participação nos clubes</strong>: comentários, respostas, curtidas, propostas de livros e votos que você envia. As conversas ficam disponíveis para os membros do clube;</li>
       <li><strong>Resenhas públicas</strong> (só as que você marcar como públicas): nota, favorito, comentário, aviso de spoiler, data em que terminou, título/autor do livro e o identificador da obra no Open Library, junto com o <strong>@ que você escolher</strong>. Elas ficam visíveis para qualquer pessoa na página do livro. Seu nome e e-mail nunca aparecem nelas.</li>
     </ul>
     <p>A leitura continua local mesmo com conta: seus livros, sessões, citações, vocabulário e as entradas de diário privadas (o padrão) <strong>não sobem para nossos servidores</strong> e não são visíveis para outras pessoas.</p>
@@ -34,8 +35,8 @@
     <h2>Rede</h2>
     <p>O Leio funciona offline. Ele usa a internet apenas para funções opcionais:</p>
     <ul>
-      <li><strong>Busca de livros</strong>: ao adicionar um livro, consultamos as APIs públicas do Google Books e da Open Library para preencher título, autor e capa. A busca é feita pelo texto que você digitou; não envia seus dados pessoais.</li>
-      <li><strong>Dicionário</strong>: traduções via API pública do MyMemory, apenas com a palavra consultada.</li>
+      <li><strong>Busca de livros</strong>: ao adicionar um livro, enviamos o texto ou ISBN pesquisado aos serviços de catálogo, como Google Books, Open Library e BrasilAPI, para preencher título, autor e capa. Não enviamos sua biblioteca completa nem os dados da sua conta nessa consulta.</li>
+      <li><strong>Dicionário</strong>: enviamos a palavra e o idioma consultados aos serviços de definição e tradução, como Wiktionary, MyMemory e o dicionário hospedado no Supabase.</li>
       <li><strong>Clubes e resenhas públicas</strong> (se você usar conta): sincronização com o nosso servidor hospedado no Supabase, autenticada pela sua conta.</li>
       <li><strong>Vincular livro</strong>: para publicar uma resenha, buscamos a obra no Open Library pelo título e autor do livro.</li>
     </ul>
@@ -45,8 +46,8 @@
 
     <h2>Permissões</h2>
     <ul>
-      <li><strong>Fotos e mídia</strong>: usada apenas quando você escolhe uma capa de livro ou foto de perfil.</li>
-      <li><strong>Notificações</strong>: usada apenas para o lembrete diário, se você ativar.</li>
+      <li><strong>Fotos e câmera</strong>: o seletor do Android permite escolher uma capa ou foto de perfil sem acesso amplo à galeria. A câmera só é solicitada quando você escolhe tirar uma foto.</li>
+      <li><strong>Notificações</strong>: usada para o lembrete diário e o timer de uma sessão em andamento, se você permitir.</li>
     </ul>
 
     <h2>Publicidade e venda de dados</h2>
